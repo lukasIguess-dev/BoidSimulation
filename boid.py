@@ -2,7 +2,7 @@ import pygame
 import time
 import random
 
-from pygame.math import Vector2
+from pygame.math import Vector2, lerp
 
 class Boid:
     def __init__(self) -> None:
