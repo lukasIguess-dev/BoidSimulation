@@ -1,14 +1,12 @@
 import sys
 import pygame
-from pygame.locals import *
-from pygame.math import*
 
-from boid import*
+from boid import Boid
 from grid import Grid
 
 def update(dt):
     for event in pygame.event.get():
-        if event.type == QUIT:
+        if event.type == pygame.QUIT:
             pygame.quit() 
             sys.exit() 
         if event.type == pygame.KEYDOWN:

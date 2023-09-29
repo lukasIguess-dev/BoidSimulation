@@ -1,7 +1,9 @@
 import pygame
 import time
 import random
-from pygame.math import*
+
+from pygame.math import Vector2
+
 class Boid:
     def __init__(self) -> None:
         self.__rect = pygame.Rect(random.randrange(100,900),random.randrange(100,600),4,4)
